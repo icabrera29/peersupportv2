@@ -1,0 +1,25 @@
+/*
+Theme Name: Peer Support Argentina
+Theme URI: https://peersupport.org.ar
+Author: Peer Support Argentina
+Author URI: https://peersupport.org.ar
+Description: Tema profesional y elegante para Peer Support Argentina, organización dedicada a la investigación y formación sobre el tratamiento del TOC. Diseño minimalista con paleta de colores calmada, inspirado en diseño editorial del New York Times.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: peersupport
+Tags: blog, education, health, two-columns, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, theme-options, threaded-comments, translation-ready
+
+Peer Support Argentina WordPress Theme, Copyright 2026
+Peer Support Argentina is distributed under the terms of the GNU GPL.
+*/
+
+/* Import all CSS files */
+@import url('css/styles.css');
+@import url('css/blog.css');
+@import url('css/contact.css');
+@import url('css/courses.css');
+@import url('css/social-sidebar.css');
