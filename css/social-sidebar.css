@@ -1,0 +1,104 @@
+/* ========================================
+   SOCIAL SIDEBAR - FIXED LEFT SIDE
+   ======================================== */
+
+.social-sidebar {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.social-sidebar__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  transition: all var(--transition-base);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-sidebar__link:first-child {
+  border-top-right-radius: 8px;
+}
+
+.social-sidebar__link:last-child {
+  border-bottom-right-radius: 8px;
+  border-bottom: none;
+}
+
+.social-sidebar__link:hover {
+  background-color: var(--color-primary-dark);
+  width: 60px;
+  padding-right: 10px;
+}
+
+.social-sidebar__link svg {
+  width: 24px;
+  height: 24px;
+  transition: transform var(--transition-base);
+}
+
+.social-sidebar__link:hover svg {
+  transform: scale(1.1);
+}
+
+/* Consistent color scheme using site palette */
+.social-sidebar__link--instagram,
+.social-sidebar__link--facebook,
+.social-sidebar__link--twitter,
+.social-sidebar__link--linkedin,
+.social-sidebar__link--whatsapp,
+.social-sidebar__link--youtube {
+  background-color: var(--color-primary);
+}
+
+.social-sidebar__link--instagram:hover,
+.social-sidebar__link--facebook:hover,
+.social-sidebar__link--twitter:hover,
+.social-sidebar__link--linkedin:hover,
+.social-sidebar__link--whatsapp:hover,
+.social-sidebar__link--youtube:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Email */
+.social-sidebar__link--email {
+  background-color: var(--color-primary);
+}
+
+.social-sidebar__link--email:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Responsive - Hide on mobile */
+@media (max-width: 768px) {
+  .social-sidebar {
+    display: none;
+  }
+}
+
+/* Tablet - Smaller size */
+@media (max-width: 968px) {
+  .social-sidebar__link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social-sidebar__link svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .social-sidebar__link:hover {
+    width: 50px;
+  }
+}
